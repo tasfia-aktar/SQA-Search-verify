@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "daedc249-00b3-45e8-bcb2-4a129f89c8bb",
+		"name": "Question 4 API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "39747508"
+	},
+	"item": [
+		{
+			"name": "Search product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/search?keyword=Nike React Phantom Run Flyknit 2",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "Nike React Phantom Run Flyknit 2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add to cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sku\": \"NJC48508-Black-X\", \r\n    \"qty\": \"10\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{URL}}api/cart/mine/items"
+			},
+			"response": []
+		},
+		{
+			"name": "Verify cart",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{URL}}/cart"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
