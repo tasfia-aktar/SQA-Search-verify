@@ -1,0 +1,1 @@
+This repository includes a detailed collection of manual test cases designed to evaluate the Search Functionality of the evershop.io web application. These test cases focus on functional accuracy, UI/UX consistency, and performance efficiency to enhance the overall user experience.
